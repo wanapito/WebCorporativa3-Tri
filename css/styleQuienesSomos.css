@@ -1,0 +1,133 @@
+
+/* Estilos para resoluciones mayores a 1300px */
+@media screen and (min-width: 1300px) {
+}
+
+/* Estilos para tablets en posición vertical */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Estilos para tablets en posición horizontal */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Estilos para teléfonos en posición vertical */
+@media screen and (max-width: 576px) {
+}
+
+/* Estilos para teléfonos en posición horizontal 576px-768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+
+
+/* Resetear estilos por defecto */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    
+}
+
+header {
+    width: 100%; /* Ancho completo */
+    padding: 20px; /* Espacio alrededor del encabezado */
+    box-sizing: border-box; /* Incluir el relleno en el ancho total */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #777;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+aside {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+aside ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+aside ul li:last-child {
+    margin-right: 0;
+}
+
+aside a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+}
+
+aside a:hover {
+    background-color: #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,140 @@
+
+/* Estilos para resoluciones mayores a 1300px */
+@media screen and (min-width: 1300px) {
+}
+
+/* Estilos para tablets en posición vertical */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Estilos para tablets en posición horizontal */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Estilos para teléfonos en posición vertical */
+@media screen and (max-width: 576px) {
+}
+
+/* Estilos para teléfonos en posición horizontal 576px-768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+
+
+
+/* Agrega una imagen de fondo al cuerpo */
+body {
+    background-image: url('img/fondo.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Establece la altura del cuerpo al 100% de la altura de la ventana del navegador */
+}
+
+/* Estilos para el menú */
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    position: relative;
+    display: inline-block;
+}
+
+.nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    background: #f2f2f2;
+}
+
+/* Estilo para los submenús */
+.nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 0;
+    border: 1px solid #ccc;
+}
+
+.nav li:hover ul {
+    display: block;
+}
+
+.nav li ul li {
+    display: block;
+}
+
+.nav li ul li a {
+    padding: 8px 20px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.nav li ul li a:hover {
+    background: #f2f2f2;
+}
+
+/* Estilos para centrar el menú */
+.centrarmenu {
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para la cabecera de la empresa */
+.empresa {
+    display: inline-block;
+}
+
+.empresa h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+
+
+/* Estilos para el section y aside */
+section,
+aside {
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+section {
+    float: left;
+}
+
+aside {
+    float: right;
+}
+
+section header,
+aside h2 {
+    text-align: center;
+}
+
+section footer {
+    text-align: center;
+}
+
+/* Estilos para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}

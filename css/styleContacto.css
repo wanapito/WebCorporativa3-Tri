@@ -1,0 +1,119 @@
+
+/* Estilos para resoluciones mayores a 1300px */
+@media screen and (min-width: 1300px) {
+}
+
+/* Estilos para tablets en posición vertical */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Estilos para tablets en posición horizontal */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Estilos para teléfonos en posición vertical */
+@media screen and (max-width: 576px) {
+}
+
+/* Estilos para teléfonos en posición horizontal 576px-768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   }
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0; /* Ajusté el relleno superior e inferior */
+    text-align: center;
+    margin-top: 0; /* Agregué un margen superior para separar del borde superior */
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.formulario {
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    display: inline-block; /* Hace que los formularios se muestren uno al lado del otro */
+    vertical-align: top; /* Alinea los formularios en la parte superior */
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: absolute; /* Cambiado a posición absoluta */
+    bottom: 0;
+    width: 100%;
+    height: 1%;
+}

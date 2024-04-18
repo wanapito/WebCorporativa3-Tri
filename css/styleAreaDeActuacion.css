@@ -1,0 +1,91 @@
+
+/* Estilos para resoluciones mayores a 1300px */
+@media screen and (min-width: 1300px) {
+}
+
+/* Estilos para tablets en posición vertical */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Estilos para tablets en posición horizontal */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Estilos para teléfonos en posición vertical */
+@media screen and (max-width: 576px) {
+}
+
+/* Estilos para teléfonos en posición horizontal 576px-768px */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+}
+
+
+
+
+/* Resetear estilos por defecto */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #555;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #777;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

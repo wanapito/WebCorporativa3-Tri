@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="css/styleContacto.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Formularios para Ingreso a la Empresa</h1>
+        <a href="index.html">Home</a>
+    </header>
+
+    <section>
+        <h2>Solicitud de Empleo</h2>
+        <form action="" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+    
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required><br>
+    
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required><br>
+    
+            <label for="experiencia">Experiencia Laboral:</label><br>
+            <textarea id="experiencia" name="experiencia" rows="4" cols="50"></textarea><br>
+    
+            <label for="archivo_cv">Currículum Vitae (PDF):</label>
+            <input type="file" id="archivo_cv" name="archivo_cv" accept=".pdf" required><br>
+    
+            <label for="disponibilidad">Disponibilidad de Horario:</label>
+            <input type="text" id="disponibilidad" name="disponibilidad"><br>
+    
+            <label for="salario">Expectativa Salarial:</label>
+            <input type="text" id="salario" name="salario"><br>
+    
+            <input type="submit" value="Enviar Solicitud">
+        </form>
+    </section>
+    
+    <section>
+        <h2>Registro de Cliente</h2>
+        <form action="" method="post">
+            <label for="nombre_empresa">Nombre de la Empresa:</label>
+            <input type="text" id="nombre_empresa" name="nombre_empresa" required><br>
+    
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required><br>
+    
+            <label for="email_empresa">Correo Electrónico:</label>
+            <input type="email" id="email_empresa" name="email_empresa" required><br>
+    
+            <label for="telefono_empresa">Teléfono:</label>
+            <input type="tel" id="telefono_empresa" name="telefono_empresa" required><br>
+    
+            <label for="sector">Sector de la Empresa:</label>
+            <select id="sector" name="sector" required>
+                <option value="tecnologia">Tecnología</option>
+                <option value="salud">Salud</option>
+                <option value="finanzas">Finanzas</option>
+                <option value="educacion">Educación</option>
+                <option value="servicios">Servicios</option>
+            </select><br>
+    
+            <label for="num_empleados">Id de Empleados:</label>
+            <input type="number" id="num_empleados" name="num_empleados" min="1" ><br>
+    
+            <label for="fecha_fundacion">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha_fundacion" name="fecha_fundacion" required><br>
+    
+            <label for="sitio_web">Sitio Web:</label>
+            <input type="url" id="sitio_web" name="sitio_web"><br>
+    
+            <label for="contacto">Persona de Contacto:</label>
+            <input type="text" id="contacto" name="contacto"><br>
+    
+            <input type="submit" value="Registrar Cliente">
+        </form>
+    </section>
+    
+    <footer>
+        <p>Footer - Formularios para Ingreso a la Empresa</p>
+    </footer>
+</body>
+</html>
