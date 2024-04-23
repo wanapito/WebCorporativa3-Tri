@@ -1,140 +1,149 @@
 
-/* Estilos para resoluciones mayores a 1300px */
-@media screen and (min-width: 1300px) {
-}
 
-/* Estilos para tablets en posición vertical */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-}
-
-/* Estilos para tablets en posición horizontal */
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-}
-
-/* Estilos para teléfonos en posición vertical */
-@media screen and (max-width: 576px) {
-}
-
-/* Estilos para teléfonos en posición horizontal 576px-768px */
-@media screen and (min-width: 576px) and (max-width: 768px) {
-}
-
-
-
-
-/* Agrega una imagen de fondo al cuerpo */
 body {
-    background-image: url('img/fondo.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center; /* Centra la imagen en el fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 100vh; /* Establece la altura del cuerpo al 100% de la altura de la ventana del navegador */
+font-family: "JetBrains Mono", monospace;
+  margin: 0;
+  padding: 0;
+  background-image: url("img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo {
+
+        height: 100px;
+        margin-right: 1000px; 
+    }
+    header h1 {
+        font-size: 60px; 
+        font-weight: bold;
+        font-family: "JetBrains Mono", sans-serif; 
+        color: #333;
+        margin: 0; 
+    }
+header {
+  background: linear-gradient(to bottom, #91b7da, #ffffff);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
 }
 
-/* Estilos para el menú */
-.nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+nav {
+  background: linear-gradient(to top, #91b7da, #ffffff);
+  padding: 5px;
+  border-radius: 10px;
+  text-align: right;
 }
 
-.nav li {
-    position: relative;
-    display: inline-block;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.nav li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: #333;
-    background: #f2f2f2;
+nav ul li {
+  position: relative;
+  display: inline-block;
 }
 
-/* Estilo para los submenús */
-.nav li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #fff;
-    padding: 0;
-    border: 1px solid #ccc;
+nav ul li a {
+  text-decoration: none;
+  color: #343a40;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 10px;
+  border-right: 2px solid #fff;
+  text-align: center;
+  transition: background-color 0.3s;
 }
 
-.nav li:hover ul {
-    display: block;
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(to bottom, #91b7da, #ffffff);
+  min-width: 120px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
-.nav li ul li {
-    display: block;
+nav ul li:hover ul {
+  display: block;
+  background: linear-gradient(to top, #91b7da, #ffffff);
 }
 
-.nav li ul li a {
-    padding: 8px 20px;
-    color: #333;
-    text-decoration: none;
-    display: block;
+nav ul li a:hover {
+  background: linear-gradient(to right, #91b7da, #adb5bd);
 }
 
-.nav li ul li a:hover {
-    background: #f2f2f2;
+nav ul li ul li {
+  display: block;
+  border-radius: 0;
 }
 
-/* Estilos para centrar el menú */
-.centrarmenu {
-    width: 100%;
-    text-align: center;
-}
-
-/* Estilos para la cabecera de la empresa */
-.empresa {
-    display: inline-block;
-}
-
-.empresa h1 {
-    font-family: 'Arial Black', sans-serif;
-    font-size: 24px;
-    margin-right: 20px;
-}
-
-
-
-/* Estilos para el section y aside */
-section,
-aside {
-    width: 45%;
-    margin: 10px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-}
 
 section {
-    float: left;
+  width: 60%;
+  float: left;
+  margin: 20px auto; /* Añadir margen para centrarlo horizontalmente */
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            overflow-y: auto;
+            max-height: calc(100vh - 150px); /* Reducir la altura para dejar espacio para el footer */
+            padding: 20px;
 }
 
 aside {
-    float: right;
+  width: 20%;
+  float: right;
 }
 
-section header,
-aside h2 {
-    text-align: center;
+section,
+aside {
+  text-align: left;
+  margin: 6px;
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: linear-gradient(to top, #91b7da, #ffffff);
+  border-radius: 10px;
+  overflow-y: auto;
+  max-height: calc(100vh - 70px);
+  color: #333
 }
 
-section footer {
-    text-align: center;
+aside h2,
+section h2 {
+  text-decoration: underline;
 }
 
-/* Estilos para el footer */
+article {
+  margin-bottom: 1px;
+}
+
+article h3 {
+  margin-top: 0;
+}
+
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 20px;
+  background: linear-gradient(to bottom, #91b7da, #ffffff);
+  padding: 5px;
+  text-align: center;
+  clear: both;
+  color: #333;
+ bottom: 0;
+  position: fixed;
+  width: 100%; 
+}
+
+.redes-sociales a i {
+  font-size: 24px;
+}
+
+.redes-sociales a i:hover {
+  color: #adb5bd;
 }
